@@ -72,7 +72,7 @@
 
     <!-- Setting button -->
     <div class="config">
-      <div class="template-config">
+      <div class="template-config ">
         <!-- Settings -->
         <div class="d-block">
           <button class="btn btn-fab btn-sm" id="sideel" title="Settings">
@@ -88,7 +88,7 @@
         <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
       </div> -->
       </div>
-      <div class="set-menu">
+      <div class="set-menu dark">
         <p>Select Color</p>
         <div class="color-bar" data-toggle="selected">
           <span
@@ -109,71 +109,85 @@
             data-class="theme-purple"
           ></span>
         </div>
-        <select class="custom-select d-block my-2" id="change-page" >
+        <select class="custom-select d-block my-2" id="change-page">
           <option value="">Go To</option>
-          <option value="top" style="font-weight: bold;">Top</option>
-          <option value="bottom" style="font-weight: bold;">Bottom</option>
+          <option value="top" style="font-weight: bold">Top</option>
+          <option value="bottom" style="font-weight: bold">Bottom</option>
         </select>
       </div>
     </div>
 
     <div
-      class="vg-page page-home"
+      class="vg-page page-home dark"
       id="home"
       style="background-image: url(../assets/img/bg_image_1.jpg)"
     >
       <!-- Navbar -->
-      <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+      <div
+        class="navbar navbar-expand-lg navbar-dark sticky dark"
+        data-offset="500"
+      >
         <div class="container">
-          <a href="" class="navbar-brand">Bigyan</a>
+          <a href="" class="navbar-brand dark">Bigyan</a>
           <button
             class="navbar-toggler"
             data-toggle="collapse"
             data-target="#main-navbar"
             aria-expanded="true"
           >
-            <span class="ti-menu"></span>
+            <span class="ti-menu dark"></span>
           </button>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a href="#home" class="nav-link" data-animate="scrolling"
+                <a href="#home" class="nav-link dark" data-animate="scrolling"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link" data-animate="scrolling"
+                <a href="#about" class="nav-link dark" data-animate="scrolling"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#portfolio" class="nav-link" data-animate="scrolling"
+                <a
+                  href="#portfolio"
+                  class="nav-link dark"
+                  data-animate="scrolling"
                   >Certifications</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#blog" class="nav-link" data-animate="scrolling"
+                <a href="#blog" class="nav-link dark" data-animate="scrolling"
                   >Blog</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#contact" class="nav-link" data-animate="scrolling"
+                <a
+                  href="#contact"
+                  class="nav-link dark"
+                  data-animate="scrolling"
                   >Contact</a
                 >
               </li>
             </ul>
             <!-- <ul class="nav ml-auto">
-              <li class="nav-item">
-                <button id="lang-en" class="btn btn-fab btn-theme no-shadow">
-                  En
-                </button>
-              </li>
-              <li class="nav-item">
-                <button id="lang-ne" class="btn btn-fab btn-theme no-shadow">
-                  Np
+              <li  class="nav-item">
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
                 </button>
               </li>
             </ul> -->
+            <div class="theme-toggle-wrapper">
+              <!-- <label for="theme-toggle">Toggle Theme:</label> -->
+              <input
+                type="checkbox"
+                id="theme-toggle"
+                class="theme-toggle"
+                onclick="toggleTheme()"
+                style="margin-left: 20px"
+              />
+            </div>
 
             <!-- Google Translate Widget -->
             <!-- <div id="google_translate_element"></div> -->
@@ -183,28 +197,8 @@
       <!-- End Navbar -->
 
       <!-- social - icons  -->
-      <!-- <div class="social-icons pt-3">
+      <div class="social-icons pt-3">
         <ul>
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="ti-twitter" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="ti-google" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="ti-instagram" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link text-light" href="#"
-              ><i class="ti-github" aria-hidden="true"></i
-            ></a>
-          </li>
           <li class="social-item">
             <a
               class="social-link text-light"
@@ -212,8 +206,30 @@
               ><i class="ti-facebook" aria-hidden="true"></i
             ></a>
           </li>
-        </ul> -->
-      <!-- </div> -->
+          <li class="social-item">
+            <a
+              class="social-link text-light"
+              href="https://www.instagram.com/bigyan.koirala2056"
+              ><i class="ti-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link text-light"
+              href="https://x.com/BigyanKoirala56"
+              ><i class="ti-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+
+          <li class="social-item">
+            <a
+              class="social-link text-light"
+              href="https://www.linkedin.com/in/bigyankoirala99"
+              ><i class="ti-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
 
       <!-- Caption header -->
       <div class="caption-header text-center wow zoomInDown">
@@ -227,7 +243,7 @@
       <div class="floating-button"><span class="ti-mouse"></span></div>
     </div>
 
-    <div class="vg-page page-about" id="about">
+    <div class="vg-page page-about dark" id="about">
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-4 py-3">
@@ -357,10 +373,7 @@
                 </div>
               </div>
               <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">Linux
-                  SIEM/SOC
-                  
-                  </span>
+                <span class="caption">Linux SIEM/SOC </span>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -405,8 +418,7 @@
                 </div>
               </div>
               <div class="progress-wrapper wow fadeInUp">
-                <span class="caption">
-                  Basics on Computer Network</span>
+                <span class="caption"> Basics on Computer Network</span>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -531,12 +543,10 @@
             <h2 class="fw-normal">Education</h2>
             <ul class="timeline mt-4 pr-md-5">
               <li>
-                <div class="title" style="white-space: nowrap; width: 45%">
-                  2023 AD (2080 BS)
-                </div>
-                <div class="details">
+                <div class="title" style="width: 45%">2023 AD (2080 BS)</div>
+                <div class="details dark">
                   <h5>BE in Computer Engineering</h5>
-                  <small class="fg-theme" style="white-space: nowrap"
+                  <small class="fg-theme"
                     >Pulchowk Campus, Institute of Engineering (Pulchowk,
                     Lalitpur)</small
                   >
@@ -548,10 +558,8 @@
                 </div>
               </li>
               <li>
-                <div class="title" style="white-space: nowrap; width: 45%">
-                  2018 AD (2075 BS)
-                </div>
-                <div class="details">
+                <div class="title" style="width: 45%">2018 AD (2075 BS)</div>
+                <div class="details dark">
                   <h5>Plus 2 (Science)</h5>
                   <small class="fg-theme"
                     >Janapriya Multiple Campus (Pokhara, Kaski)</small
@@ -564,10 +572,8 @@
                 </div>
               </li>
               <li>
-                <div class="title" style="white-space: nowrap; width: 45%">
-                  2015 AD (2072 BS)
-                </div>
-                <div class="details">
+                <div class="title" style="width: 45%">2015 AD (2072 BS)</div>
+                <div class="details dark">
                   <h5>School Leaving Certificate (SLC)</h5>
                   <small class="fg-theme"
                     >Shree Purnamrit Bhavani Secondary School (Waling,
@@ -586,35 +592,37 @@
             <h2 class="fw-normal">Experience</h2>
             <ul class="timeline mt-4 pr-md-5">
               <li>
-                <div class="title">2017 - Current</div>
-                <div class="details">
-                  <h5>Specialize of course</h5>
-                  <small class="fg-theme">University of Study</small>
+                <div class="title">2024 - Current</div>
+                <div class="details dark">
+                  <h5>Security Engineer</h5>
+                  <small class="fg-theme">CryptoGen Nepal</small>
                   <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered
+                    Involve in maintenance of SIEM technologies within the SOC
+                    infrastructure along with Vulnerability Assessment and
+                    Management
+                  </p>
+                </div>
+              </li>
+              <li class="second-list">
+                <div class="title1">2023 - Current</div>
+                <div class="details dark">
+                  <h5>Interpreter</h5>
+                  <small class="fg-theme">TransPerfect</small>
+                  <p>
+                    Involve in providing real-time over-the-phone interpretation
+                    for English<>Nepali, specializing in medical and financial
+                    sectors
                   </p>
                 </div>
               </li>
               <li>
-                <div class="title">2014</div>
-                <div class="details">
-                  <h5>Specialize of course</h5>
-                  <small class="fg-theme">University of Study</small>
+                <div class="title">2023</div>
+                <div class="details dark">
+                  <h5>Security Analyst</h5>
+                  <small class="fg-theme">Raechal Enterprises Pvt Ltd</small>
                   <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="title">2011</div>
-                <div class="details">
-                  <h5>Specialize of course</h5>
-                  <small class="fg-theme">University of Study</small>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered
+                    Engaged in deploying and supporting industry-leading
+                    security solutions like Crowdstrike's EDR and NGAV
                   </p>
                 </div>
               </li>
@@ -624,7 +632,7 @@
       </div>
     </div>
 
-    <div class="vg-page page-service">
+    <div class="vg-page page-service dark">
       <div class="container">
         <div class="text-center wow fadeInUp">
           <div class="badge badge-subhead">Service</div>
@@ -633,12 +641,12 @@
         <div class="row mt-5">
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card card-service wow fadeInUp">
-              <div class="icon">
+              <div class="icon dark">
                 <span class="ti-paint-bucket"></span>
               </div>
               <div class="caption">
                 <h4 class="fg-theme">Web Design</h4>
-                <p>
+                <p style="color: #121212">
                   There are many variations of passages of Lorem Ipsum available
                 </p>
               </div>
@@ -646,12 +654,12 @@
           </div>
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card card-service wow fadeInUp">
-              <div class="icon">
+              <div class="icon dark">
                 <span class="ti-search"></span>
               </div>
               <div class="caption">
                 <h4 class="fg-theme">SEO</h4>
-                <p>
+                <p style="color: #121212">
                   There are many variations of passages of Lorem Ipsum available
                 </p>
               </div>
@@ -659,12 +667,12 @@
           </div>
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card card-service wow fadeInUp">
-              <div class="icon">
+              <div class="icon dark">
                 <span class="ti-vector"></span>
               </div>
               <div class="caption">
                 <h4 class="fg-theme">UI/UX Design</h4>
-                <p>
+                <p style="color: #121212">
                   There are many variations of passages of Lorem Ipsum available
                 </p>
               </div>
@@ -672,12 +680,12 @@
           </div>
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div class="card card-service wow fadeInUp">
-              <div class="icon">
+              <div class="icon dark">
                 <span class="ti-desktop"></span>
               </div>
               <div class="caption">
                 <h4 class="fg-theme">Web Development</h4>
-                <p>
+                <p style="color: #121212">
                   There are many variations of passages of Lorem Ipsum available
                 </p>
               </div>
@@ -714,7 +722,7 @@
     </div> -->
 
     <!-- Portfolio page -->
-    <div class="vg-page page-portfolio" id="portfolio">
+    <div class="vg-page page-portfolio dark" id="portfolio">
       <div class="container">
         <div class="text-center wow fadeInUp">
           <div class="badge badge-subhead">Certifications</div>
@@ -903,7 +911,7 @@
   </div> End client -->
 
     <!-- Blog -->
-    <div class="vg-page page-blog" id="blog">
+    <div class="vg-page page-blog dark" id="blog">
       <div class="container">
         <div class="text-center">
           <div class="badge badge-subhead wow fadeInUp">Blog</div>
@@ -965,7 +973,7 @@
     <!-- End blog -->
 
     <!-- Contact -->
-    <div class="vg-page page-contact" id="contact">
+    <div class="vg-page page-contact dark" id="contact">
       <div class="container-fluid">
         <div class="text-center wow fadeInUp">
           <div class="badge badge-subhead">Contact</div>
@@ -1028,45 +1036,65 @@
     <!-- End Contact -->
 
     <!-- Footer -->
-    <div class="vg-footer">
+    <div class="vg-footer dark">
       <h1 class="text-center">Contact Me</h1>
       <div class="container">
         <div class="row">
           <!-- col-lg-5 -->
-          <div class="col-12 col-md-5 px-3 py-3">
+          <div class="col-12 col-md-5 px-3 py-3 dark">
             <div class="footer-info">
               <p>Where to find me</p>
               <hr class="divider" />
               <p class="fs-large fg-white" style="white-space: nowrap">
-                Temporary Addr: New Baneshwor, Kathmandu, Nepal <br /><span
-                  style="margin-left: 200px"
+                <span class="dark"
+                  >Temporary Addr: New Baneshwor, Kathmandu, Nepal </span
+                ><br /><span class="dark" style="margin-left: 200px"
                   >Birauta, Pokhara, Nepal</span
                 >
               </p>
-              <p class="fs-large fg-white" style="white-space: nowrap">
-                Permanent Addr: Waling, Syangja, Nepal
+              <p class="fs-large fg-white dark" style="white-space: nowrap">
+                <span class="dark">Permanent Addr: Waling, Syangja, Nepal</span>
               </p>
             </div>
           </div>
           <!-- col-md-6 -->
           <div class="col-12 col-md-4 col-lg-3 py-3">
-            <div class="float-lg-right">
+            <div class="float-lg-right dark">
               <p>Let's Connect</p>
               <hr class="divider" />
               <ul class="list-unstyled">
                 <li>
-                  <a href="https://www.facebook.com/bigyan.koirala2056"
+                  <a
+                    class="dark"
+                    href="https://www.facebook.com/bigyan.koirala2056"
                     >Facebook</a
                   >
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/bigyan.koirala2056"
+                  <a
+                    class="dark"
+                    href="https://www.instagram.com/bigyan.koirala2056"
                     >Instagram</a
                   >
                 </li>
-                <li><a href="https://x.com/BigyanKoirala56">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Discord</a></li>
+                <li>
+                  <a class="dark" href="https://x.com/BigyanKoirala56"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dark"
+                    href="https://www.linkedin.com/in/bigyankoirala99"
+                    >LinkedIn</a
+                  >
+                </li>
+                <!-- <li><a class = "dark" href="#">Discord</a></li> -->
+                <li>
+                  <a class="dark" href="https://github.com/bigyan-koirala"
+                    >Github</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -1075,8 +1103,8 @@
               <p>Reach me at</p>
               <hr class="divider" />
               <ul class="list-unstyled">
-                <li>bigyan.koirala2056@gmail.com</li>
-                <li>+977 9848260732</li>
+                <li class="dark">bigyan.koirala2056@gmail.com</li>
+                <li class="dark">+977 9848260732</li>
                 <!-- <li>+81302</li> -->
               </ul>
             </div>
@@ -1136,18 +1164,37 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"
     ></script>
     <script>
-      document.getElementById("change-page").addEventListener("change", function () {
-        const selectedValue = this.value;
-        if (selectedValue === "top") {
-          // Scroll to the top of the page
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } else if (selectedValue === "bottom") {
-          // Scroll to the footer section 
-          window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      document
+        .getElementById("change-page")
+        .addEventListener("change", function () {
+          const selectedValue = this.value;
+          if (selectedValue === "top") {
+            // Scroll to the top of the page
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          } else if (selectedValue === "bottom") {
+            // Scroll to the footer section
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: "smooth",
+            });
+          }
+          // Reset dropdown to the default option
+          this.value = "";
+        });
+    </script>
+    <script>
+      // Theme toggle function
+      function toggleTheme() {
+        const body = document.body;
+        const toggle = document.getElementById("theme-toggle");
+
+        // Toggle the dark-theme class on the body
+        if (toggle.checked) {
+          body.classList.add("dark-theme");
+        } else {
+          body.classList.remove("dark-theme");
         }
-        // Reset dropdown to the default option
-        this.value = "";
-      });
+      }
     </script>
   </body>
 </html>

@@ -27,14 +27,75 @@
 
  */
 
-:root {
+/* :root {
     --theme-red: #ef3724;
     --theme-blue: #2960f7;
     --theme-green: #8cc63f;
     --theme-orange: #fd7e14;
     --theme-purple: #6f42c1;
-}
+    
+} */
 
+  /* Define dark theme variables */
+  
+
+
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --navbar-bg-color: rgba(104, 102, 102, 0.8);
+    --navbar-text-color: #fff;
+
+  } 
+
+
+    .dark-theme { 
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --navbar-bg-color: #121212;
+    --navbar-text-color: #ffffff;
+  }  
+
+.dark {
+  background-color: var(--bg-color) !important ;
+  color: var(--text-color) !important;
+
+} 
+  
+  /* Checkbox styles */
+      .theme-toggle-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+  
+      .theme-toggle {
+        appearance: none;
+        width: 50px;
+        height: 25px;
+        background-color: var(--text-color);
+        border-radius: 25px;
+        position: relative;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+  
+      .theme-toggle::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+        top: 2.5px;
+        left: 5px;
+        transition: transform 0.3s;
+      }
+  
+      .theme-toggle:checked::before {
+        transform: translateX(25px);
+      }
 /* Light */
 @font-face {
     font-family: 'Quicksand';
@@ -66,9 +127,13 @@
     1. Basic
 */
 
+
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+    /* background-color: var(--bg-main); */
+
 }
 
 .fw-bold {
@@ -1158,16 +1223,20 @@ a:hover, a:active {
     }
 }
 
+ 
+
 
 /* Theme color style */
 
 /* Theme red */
-.theme-red .bg-theme {
+.theme-red .bg-theme{
     background-color: #EF3724 !important;
+    /* background-color: var(--bg-color); */
 }
 
 .theme-red .fg-theme {
     color: #EF3724 !important;
+    /* color: var(--text-color); */
 }
 
 .theme-red .btn-theme {

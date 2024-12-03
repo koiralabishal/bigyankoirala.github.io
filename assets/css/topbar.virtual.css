@@ -341,7 +341,9 @@ box-shadow: var(--box-shadow);
 /* 22 */
   padding: 50px;
   /* #fff */
-  background-color: #f8e9e9;
+  /* background-color: #f8e9e9; */
+  background-color: 	#3a3535;
+ 
   /* 0 */
   border: 2;
   border-radius: 8%;
@@ -413,7 +415,8 @@ box-shadow: var(--box-shadow);
 .card-service .caption, .card-service1 .caption {
   margin-top: 16px;
   text-align: center;
-  color: #747474;
+  /* color: #747474; */
+  color: #fff; 
 }
 
 

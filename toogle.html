@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Toggle and Color Selector</title>
+  <style>
+    /* Root variables for themes */
+    :root {
+      --bg-color: #ffffff; /* Light theme background */
+      --text-color: #121212; /* Light theme text */
+      --accent-color: #ef3724; /* Default red theme */
+    }
+
+    /* Dark Theme Variables */
+    .dark-theme {
+      --bg-color: #121212; /* Dark theme background */
+      --text-color: #ffffff; /* Dark theme text */
+    }
+
+    /* Global Styles */
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: var(--accent-color);
+      color: #ffffff;
+      transition: background-color 0.3s;
+    }
+
+    /* Theme Selector Styles */
+    .set-menu {
+      margin: 20px;
+      padding: 15px;
+      border: 1px solid var(--accent-color);
+      background-color: var(--bg-color);
+      border-radius: 8px;
+      box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.2);
+    }
+
+    .color-bar {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .color-item {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .color-item:hover {
+      transform: scale(1);
+      /* border-color: #000; */
+    }
+
+    .color-item.selected {
+      border: 2px solid #000;
+    }
+
+    /* Predefined Colors */
+    .bg-theme-red {
+      background-color: #ef3724;
+    }
+
+    .bg-theme-blue {
+      background-color: #2960f7;
+    }
+
+    .bg-theme-green {
+      background-color: #8cc63f;
+    }
+
+    .bg-theme-orange {
+      background-color: #fd7e14;
+    }
+
+    .bg-theme-purple {
+      background-color: #6f42c1;
+    }
+
+    * {
+  box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures that elements wrap to the next row */
+  gap: 20px; /* Adds space between divs */
+  justify-content: space-between; /* Distributes the divs evenly */
+}
+
+.item {
+  width: calc(50% - 10px); /* Ensure two items per row */
+  height: 150px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 150px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05); /* Scale up the div on hover */
+  background-color: lightgreen; /* Change color on hover */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <div class="theme-toggle-wrapper">
+    <label for="theme-toggle">Toggle Theme:</label>
+    <input
+      type="checkbox"
+      id="theme-toggle"
+      class="theme-toggle"
+      onclick="toggleTheme()"
+    />
+  </div>
+
+  <!-- Set Menu for Color Selection -->
+  <div class="set-menu">
+    <p>Select a Theme Color:</p>
+    <div class="color-bar">
+      <span
+        class="color-item bg-theme-red selected"
+        onclick="changeColor(this, '#ef3724')"
+      ></span>
+      <span
+        class="color-item bg-theme-blue"
+        onclick="changeColor(this, '#2960f7')"
+      ></span>
+      <span
+        class="color-item bg-theme-green"
+        onclick="changeColor(this, '#8cc63f')"
+      ></span>
+      <span
+        class="color-item bg-theme-orange"
+        onclick="changeColor(this, '#fd7e14')"
+      ></span>
+      <span
+        class="color-item bg-theme-purple"
+        onclick="changeColor(this, '#6f42c1')"
+      ></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="item">Div 1</div>
+    <div class="item">Div 2</div>
+    <div class="item">Div 3</div>
+    <div class="item">Div 4</div>
+  </div>
+  
+  <script>
+    // Track current theme state
+    let isDarkTheme = false;
+
+    // Toggle between light and dark themes
+    function toggleTheme() {
+      const body = document.body;
+      const toggle = document.getElementById("theme-toggle");
+
+      isDarkTheme = toggle.checked; // Update theme state
+      if (isDarkTheme) {
+        body.classList.add("dark-theme");
+      } else {
+        body.classList.remove("dark-theme");
+      }
+    }
+
+    // Change accent color dynamically
+    function changeColor(element, color) {
+      // Update CSS variable for accent color
+      document.documentElement.style.setProperty('--accent-color', color);
+
+      // Remove 'selected' class from all color items
+      const colorItems = document.querySelectorAll('.color-item');
+      colorItems.forEach(item => item.classList.remove('selected'));
+
+      // Add 'selected' class to the clicked color
+      element.classList.add('selected');
+
+      // Ensure the dark theme class remains intact if active
+      if (isDarkTheme) {
+        document.body.classList.add('dark-theme');
+      }
+    }
+  </script>
+</body>
+</html>

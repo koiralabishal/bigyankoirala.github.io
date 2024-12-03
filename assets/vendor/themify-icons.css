@@ -89,6 +89,9 @@
 .ti-ruler-pencil:before {
 	content: "\e615";
 }
+.ti-pencil:before{
+	content: "\e600"; 
+}
 .ti-ruler-alt:before {
 	content: "\e616";
 }
@@ -218,6 +221,45 @@
 .ti-desktop:before {
 	content: "\e640";
 }
+
+.ti-comment:before {
+	content: "\e604"; /* Unicode for ti-comment */
+  }
+
+  .ti-shield:before {
+	content: "\e621"; /* Unicode for ti-shield */
+  }
+
+  .ti-code:before {
+	content: "\e63a"; /* Unicode for ti-code */
+  }
+
+  .ti-brush:before {
+	content: "\e63e"; /* Unicode for ti-brush */
+  }
+
+  .ti-git:before {
+	content: "\e615"; /* Unicode for ti-git */
+  }
+  .ti-app:before {
+	content: "\e608"; /* Unicode for ti-app */
+  }
+
+  .ti-light-bulb {
+	content: "\e605";
+  }
+  .ti-css3:before {
+	content: "\e60f"; /* Unicode for ti-css3 */
+  }
+	  
+  .ti-gear:before {
+	content: "\e609"; /* Unicode for ti-gear */
+  }
+  
+/* .ti-translate:before {
+	content: "\e621"; 
+  } */
+  
 .ti-cup:before {
 	content: "\e641";
 }
@@ -1058,6 +1100,12 @@
 .ti-html5:before {
 	content: "\e758";
 }
+
+.ti-lock:before {
+	content: "\e616";
+	
+}
+
 .ti-flickr-alt:before {
 	content: "\e759";
 }

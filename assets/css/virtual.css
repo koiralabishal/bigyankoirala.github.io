@@ -39,7 +39,7 @@
   /* Define dark theme variables */
   
 
-
+/* 
   :root {
     --bg-color: #ffffff;
     --text-color: #121212;
@@ -62,7 +62,7 @@
 
 } 
   
-  /* Checkbox styles */
+  Checkbox styles
       .theme-toggle-wrapper {
         display: flex;
         align-items: center;
@@ -95,7 +95,7 @@
   
       .theme-toggle:checked::before {
         transform: translateX(25px);
-      }
+      } */
 /* Light */
 @font-face {
     font-family: 'Quicksand';
@@ -392,9 +392,9 @@ a:hover, a:active {
 
 .set-menu {
     position: relative;
-    /* display: inline-block; */
+    display: inline-block;
 
-    top: 50%; /* Adjust the position of the menu to appear below the button */
+    top: 50%; /*Adjust the position of the menu to appear below the button  */
     right: 0; 
     display: none; 
     

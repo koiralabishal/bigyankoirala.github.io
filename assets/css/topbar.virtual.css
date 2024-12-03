@@ -1,8 +1,17 @@
+/* :root {
+  --theme-red: #ef3724;
+  --theme-blue: #2960f7;
+  --theme-green: #8cc63f;
+  --theme-orange: #fd7e14;
+  --theme-purple: #6f42c1;
+  
+} */
 
 
 :root {
   --bg-color: #ffffff;
-  --text-color: #121212;
+  --text-color: #121212;  
+  /* --box-shadow: 4px 4px  rgba(0, 0, 0, 0.2) */
   
 
  
@@ -13,12 +22,14 @@
   .dark-theme { 
   --bg-color: #121212;
   --text-color: #ffffff;
+  /* --box-shadow: 4px 4px  rgba(0, 0, 0, 0.2); */
  
 }  
 
 .dark {
 background-color: var(--bg-color) !important ;
 color: var(--text-color) !important;
+box-shadow: var(--box-shadow);
 
 
 } 
@@ -326,12 +337,67 @@ color: var(--text-color) !important;
 
 .card-service {
   margin: 16px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 0;
+
+/* 22 */
+  padding: 50px;
+  /* #fff */
+  background-color: #f8e9e9;
+  /* 0 */
+  border: 2;
+  border-radius: 8%;
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.2);
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
 }
 
-.card-service .icon {
+
+.listingSkills {
+  display: grid; /* Enables grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 10px; /* Space between rows and columns */
+  /* list-style: none;  */
+  font-size: 18px; /* Adjust font size */
+  padding: 0; /* Removes padding */
+  margin: 0; /* Removes margin */
+  text-align: left; /* Align text to the left */
+}
+
+.card-service1 {
+  margin: 16px auto;
+
+/* 22 */
+  padding: 22px;
+  /* #fff */
+  background-color: #f8e9e9;
+  /* 0 */
+  border: 2;
+  border-radius: 4%;
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.2);
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+}
+
+.card-service:hover {
+  transform: scale(1.1);
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.2);;
+  cursor: pointer;
+  z-index: 1;
+  /* margin-left: 100px 0 auto; */
+  /* padding: 50px; */
+  
+}
+
+.card-service1:hover {
+  transform: scale(1.1);
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.2);;
+  cursor: pointer;
+  z-index: 1;
+  /* margin-left: 100px 0 auto; */
+  /* padding: 50px; */
+  
+}
+
+.card-service .icon, .card-service1 .icon {
   display: inline-block;
   margin: 0 auto;
   width: 100px;
@@ -340,10 +406,11 @@ color: var(--text-color) !important;
   text-align: center;
   font-size: 32px;
   border-radius: 50%;
-  background-color: #f4f5f8;
+  /* #f4f5f8 */
+  background-color: #f4f5f8 ;
 }
 
-.card-service .caption {
+.card-service .caption, .card-service1 .caption {
   margin-top: 16px;
   text-align: center;
   color: #747474;

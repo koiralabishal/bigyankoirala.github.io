@@ -335,6 +335,13 @@ box-shadow: var(--box-shadow);
   background-color: #fff;
 }
 
+/* .wow .card {
+  background-color: #3a3535;
+  border: 1;
+  border-radius: 8%;
+} */
+
+
 .card-service {
   margin: 16px auto;
 
@@ -352,17 +359,110 @@ box-shadow: var(--box-shadow);
   /* overflow: hidden; */
 }
 
+.card-service-certification {
+  margin: 50px auto;
+  position: relative;
+  /* margin-left: 50px; */
+/* 22 */
+  padding: 50px;
+  /* padding-right: 90px; */
+  /* #fff */
+  /* background-color: #f8e9e9; */
+  background-color: 	#3a3535;
+ /* -moz-box-align: center; */
+  /* 0 */
+  border: 2;
+  border-radius: 50px;
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.2);
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+}
+
 
 .listingSkills {
   display: grid; /* Enables grid layout */
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 10px; /* Space between rows and columns */
   /* list-style: none;  */
-  font-size: 18px; /* Adjust font size */
-  padding: 0; /* Removes padding */
-  margin: 0; /* Removes margin */
+  font-size: 15px; /* Adjust font size */
+  padding: 1; /* Removes padding */
+  /* margin: 20px;  */
   text-align: left; /* Align text to the left */
 }
+
+.listing-certifications {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
+  /* line-height: 1.5rem ; */
+  font-size: 15px; 
+  padding: 1px; 
+  margin-left: 17%; 
+  margin-top: 3%;
+  text-align: left; 
+}
+
+
+
+
+
+/* .row-gap-fix {
+  row-gap: 10px; 
+  column-gap: 10px;
+} */
+/* .py-4, .py-lg-4 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+} */
+
+
+
+/* .tweet {
+  flex: 0 0 auto; 
+  width: 350px; 
+  height: auto; 
+  overflow: hidden; 
+  border: 3px solid #ddd; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.twitter-tweet{
+  background-color: #45464d;
+  color: #ffff
+} */
+
+.twitter-tweet {
+  /* background-color: #555 !important; */
+  color: white !important; 
+  /* border-radius: 70px !important;  */
+  /* border: 1 solid red !important; */
+  padding: 10px !important; 
+
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+
+.twitter-tweet iframe {
+  border-radius: 30px !important;
+  width: 100% !important;
+  height: 365px !important;
+  /* background-color: black !important;; */
+}
+
+
+/* .tweet-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tweet-container .tweet {
+  width: 350px;
+  height: 450px;
+  border: 1px solid #ddd;
+  padding: 10px;
+} */
 
 .card-service1 {
   margin: 16px auto;
@@ -412,7 +512,7 @@ box-shadow: var(--box-shadow);
   background-color: #f4f5f8 ;
 }
 
-.card-service .caption, .card-service1 .caption {
+.card-service .caption, .card-service1 .caption, .card-service-certification .caption {
   margin-top: 16px;
   text-align: center;
   /* color: #747474; */

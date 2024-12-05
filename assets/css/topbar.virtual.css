@@ -621,6 +621,10 @@ body, html {
   border-left: 0;
 }
 
+e{
+  margin-left:3px;
+}
+
 .page-client .row .item:last-child {
   border-right: 0;
 }

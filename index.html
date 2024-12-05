@@ -139,17 +139,17 @@
           </button>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a href="#home" class="nav-link dark" data-animate="scrolling"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a href="#about" class="nav-link dark" data-animate="scrolling"
                   >About</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a
                   href="#portfolio"
                   class="nav-link dark"
@@ -157,12 +157,12 @@
                   >Certifications</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a href="#blog" class="nav-link dark" data-animate="scrolling"
                   >Blog</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a
                   href="#contact"
                   class="nav-link dark"
@@ -178,19 +178,19 @@
                 </button>
               </li>
             </ul> -->
-            <div class="theme-toggle-wrapper">
-              <!-- <label for="theme-toggle">Toggle Theme:</label> -->
-              <input
-                type="checkbox"
-                id="theme-toggle"
-                class="theme-toggle"
-                onclick="toggleTheme()"
-                style="margin-left: 20px ;"
-              />
-            </div>
 
             <!-- Google Translate Widget -->
             <!-- <div id="google_translate_element"></div> -->
+          </div>
+          <div class="theme-toggle-wrapper">
+            <!-- <label for="theme-toggle">Toggle Theme:</label> -->
+            <input
+              type="checkbox"
+              id="theme-toggle"
+              class="theme-toggle"
+              onclick="toggleTheme()"
+              style="margin-left: 20px"
+            />
           </div>
         </div>
       </div>
@@ -577,35 +577,37 @@
 
     <!-- Portfolio page -->
     <div class="vg-page page-portfolio dark" id="portfolio">
-      <div class="container" style="text-align: center;">
+      <div class="container" style="text-align: center">
         <div class="text-center wow fadeInUp">
           <div class="badge badge-subhead">Certifications</div>
         </div>
         <!-- <div class="row py-4"> -->
-          <!-- <div class="col-md-7"> -->
-            <!-- <div class=""> -->
-              <div class="card card-service-certification wow fadeInUp" >
-                <div class="caption">
-                  <h4 class="fg-theme" style="text-align: center;">Cybersecurity Tools and Product Certifications</h4>
-                  <!-- <div class="row py-4"> -->
-                    <!-- <div class="py-lg-4"> -->
-                      <ul class="listing-certifications">
-                            <li>SIEM Administrator - LogRhythm</li>
-                            <li>SOC Analyst- LogRhythm</li>
-                            <li>Falcon Administrator - CrowdStrike</li>
-                            <li>Vulnerabilty Assesment - Tenable</li>
-                            <li>AWS Cloud Foundation - Amazon</li>
-                            <li>WAF Foundation - Barracuda</li>
-                            <!-- <li>AWS Cloud Foundation - Amazon</li> -->
-                          </ul>
-                        
-                    <!-- </div> -->
-                  <!-- </div> -->
-                </div>
-              </div>
+        <!-- <div class="col-md-7"> -->
+        <!-- <div class=""> -->
+        <div class="card card-service-certification wow fadeInUp">
+          <div class="caption">
+            <h4 class="fg-theme" style="text-align: center">
+              Cybersecurity Tools and Product Certifications
+            </h4>
+            <!-- <div class="row py-4"> -->
+            <!-- <div class="py-lg-4"> -->
+            <ul class="listing-certifications">
+              <li>SIEM Administrator - LogRhythm</li>
+              <li>SOC Analyst- LogRhythm</li>
+              <li>Falcon Administrator - CrowdStrike</li>
+              <li>Vulnerabilty Assesment - Tenable</li>
+              <li>AWS Cloud Foundation - Amazon</li>
+              <li>WAF Foundation - Barracuda</li>
+              <!-- <li>AWS Cloud Foundation - Amazon</li> -->
+            </ul>
+
             <!-- </div> -->
-          <!-- </div> -->
-          <!-- <div class="col-md-6">
+            <!-- </div> -->
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-md-6">
             <div class="py-lg-4">
               <div class="card card-service wow fadeInUp">
                 <div class="caption">
@@ -618,7 +620,7 @@
             </div>
           </div> -->
 
-          <!-- <div class="col-md-6">
+        <!-- <div class="col-md-6">
             <div class="py-lg-4">
               <div class="card card-service wow fadeInUp">
                 <div class="caption">
@@ -840,9 +842,7 @@
 
         <div class="row post-grid">
           <div class="col-md-6 col-lg-4 wow fadeInUp">
-            <div
-              class="card"              
-            >
+            <div class="card">
               <blockquote class="twitter-tweet">
                 <p lang="en" dir="ltr">
                   <a
@@ -906,7 +906,7 @@
                 <img src="../assets/img/work/work-1.jpg" alt="" />
               </div> -->
               <!-- <div class="caption"> -->
-                <!-- <a href="javascript:void(0)" class="post-category">Design</a>
+              <!-- <a href="javascript:void(0)" class="post-category">Design</a>
                 <a href="#" class="post-title">5 basic tips for illustrating</a>
                 <span class="post-date"
                   ><span class="sr-only">Published on</span> May 22, 2018</span
@@ -1196,6 +1196,8 @@
           document.body.classList.add("dark-theme");
         }
       }
+    </script>
+    
     </script>
   </body>
 </html>

@@ -34,6 +34,13 @@ box-shadow: var(--box-shadow);
 
 } 
 
+
+body, html {
+  /* margin: 0;
+  padding: 0; */
+  overflow-x:hidden;
+}
+
 /* Checkbox styles */
     .theme-toggle-wrapper {
       display: flex;
@@ -378,6 +385,12 @@ box-shadow: var(--box-shadow);
   /* overflow: hidden; */
 }
 
+
+.card-service-certification:hover{
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
 
 .listingSkills {
   display: grid; /* Enables grid layout */

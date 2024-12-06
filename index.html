@@ -6,12 +6,8 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- <meta name="copyright" content="MACode ID, https://www.macodeid.com/"> -->
-
     <title>Bigyan Koirala - Personal Portfolio</title>
     <style></style>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css"> -->
-
     <link
       rel="shortcut icon"
       href="../assets/favicon.ico"
@@ -64,7 +60,7 @@
       href="../assets/css/topbar.virtual.css"
     />
   </head>
-  <body class="theme-red">
+  <body class="theme-red" id="theme">
     <!-- Back to top button -->
     <div class="btn-back_to_top">
       <span class="ti-arrow-up"></span>
@@ -79,16 +75,8 @@
             <span class="ti-settings"></span>
           </button>
         </div>
-        <!-- Puschase -->
-        <!-- <div class="d-block">
-        <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
-      </div> -->
-        <!-- Help -->
-        <!-- <div class="d-block">
-        <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
-      </div> -->
       </div>
-      <div class="set-menu dark">
+      <div class="set-menu">
         <p>Select Color</p>
         <div class="color-bar" data-toggle="selected">
           <span
@@ -118,38 +106,35 @@
     </div>
 
     <div
-      class="vg-page page-home dark"
+      class="vg-page page-home"
       id="home"
       style="background-image: url(../assets/img/bg_image_1.jpg)"
     >
       <!-- Navbar -->
-      <div
-        class="navbar navbar-expand-lg navbar-dark sticky dark"
-        data-offset="500"
-      >
+      <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
         <div class="container">
-          <a href="" class="navbar-brand dark">Bigyan</a>
+          <a href="" class="navbar-brand">Bigyan</a>
           <button
             class="navbar-toggler"
             data-toggle="collapse"
             data-target="#main-navbar"
             aria-expanded="true"
           >
-            <span class="ti-menu dark"></span>
+            <span class="ti-menu"></span>
           </button>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item ">
-                <a href="#home" class="nav-link dark" data-animate="scrolling"
+              <li class="nav-item">
+                <a href="#home" class="nav-link" data-animate="scrolling"
                   >Home</a
                 >
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a href="#about" class="nav-link dark" data-animate="scrolling"
                   >About</a
                 >
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a
                   href="#portfolio"
                   class="nav-link dark"
@@ -157,12 +142,12 @@
                   >Certifications</a
                 >
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a href="#blog" class="nav-link dark" data-animate="scrolling"
                   >Blog</a
                 >
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a
                   href="#contact"
                   class="nav-link dark"
@@ -171,19 +156,8 @@
                 >
               </li>
             </ul>
-            <!-- <ul class="nav ml-auto">
-              <li  class="nav-item">
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-dark">Dark</button>
-                </button>
-              </li>
-            </ul> -->
-
-            <!-- Google Translate Widget -->
-            <!-- <div id="google_translate_element"></div> -->
           </div>
           <div class="theme-toggle-wrapper">
-            <!-- <label for="theme-toggle">Toggle Theme:</label> -->
             <input
               type="checkbox"
               id="theme-toggle"
@@ -311,7 +285,6 @@
                 <div class="icon dark">
                   <span class="ti-html5"></span>
                   <span class="ti-css3"></span>
-                  <!-- <span class="ti-git"></span> -->
                 </div>
                 <div class="caption">
                   <h4 class="fg-theme">Coding</h4>
@@ -364,7 +337,6 @@
                 <div class="icon dark">
                   <span>🗣</span>
                   <span class="ti-pencil"></span>
-                  <!-- <span class="ti-html5"></span> -->
                 </div>
                 <div class="caption">
                   <h4 class="fg-theme">Languages</h4>
@@ -486,111 +458,17 @@
       </div>
     </div>
 
-    <!-- <div class="vg-page page-service dark">
-      <div class="container">
-        <div class="text-center wow fadeInUp">
-          <div class="badge badge-subhead">Service</div>
-        </div>
-        <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
-        <div class="row mt-5" style="margin-left: 10%">
-          <div class="col-md-6 col-lg-4 col-xl-4">
-            <div class="card card-service1 wow fadeInUp">
-              <div class="icon dark">
-                <span class="ti-paint-bucket"></span>
-              </div>
-              <div class="caption">
-                <h4 class="fg-theme">Web Design</h4>
-                <p style="color: #121212; text-align: justify; hyphens: auto">
-                  There are many variations of passages of Lorem Ipsum available
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-4">
-            <div class="card card-service1 wow fadeInUp">
-              <div class="icon dark">
-                <span class="ti-search"></span>
-              </div>
-              <div class="caption">
-                <h4 class="fg-theme">SEO</h4>
-                <p style="color: #121212; text-align: justify; hyphens: auto">
-                  There are many variations of passages of Lorem Ipsum available
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-4">
-            <div class="card card-service1 wow fadeInUp">
-              <div class="icon dark">
-                <span class="ti-vector"></span>
-              </div>
-              <div class="caption">
-                <h4 class="fg-theme">UI/UX Design</h4>
-                <p style="color: #121212; text-align: justify; hyphens: auto">
-                  There are many variations of passages of Lorem Ipsum available
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div class="card card-service1 wow fadeInUp">
-              <div class="icon dark">
-                <span class="ti-desktop"></span>
-              </div>
-              <div class="caption">
-                <h4 class="fg-theme">Web Development</h4>
-                <p style="color: #121212; text-align: justify;hyphens: auto;">
-                  There are many variations of passages of Lorem Ipsum available
-                </p>
-              </div>
-            </div>
-          </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-
-    <!-- <div
-      class="vg-page page-funfact"
-      style="background-image: url(../assets/img/bg_banner.jpg)"
-    >
-      <div class="container">
-        <div class="row section-counter">
-          <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-            <h1 class="number" data-number="768">768</h1>
-            <span>Clients</span>
-          </div>
-          <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-            <h1 class="number" data-number="230">230</h1>
-            <span>Project Compleate</span>
-          </div>
-          <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-            <h1 class="number" data-number="97">97</h1>
-            <span>Project Ongoing</span>
-          </div>
-          <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
-            <h1 class="number" data-number="699">699</h1>
-            <span>Client Satisfaction</span>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Portfolio page -->
-    <div class="vg-page page-portfolio dark" id="portfolio">
+    <!-- Certification page -->
+    <div class="vg-page page-portfolio page-service" id="portfolio">
       <div class="container" style="text-align: center">
         <div class="text-center wow fadeInUp">
           <div class="badge badge-subhead">Certifications</div>
         </div>
-        <!-- <div class="row py-4"> -->
-        <!-- <div class="col-md-7"> -->
-        <!-- <div class=""> -->
         <div class="card card-service-certification wow fadeInUp">
           <div class="caption">
             <h4 class="fg-theme" style="text-align: center">
               Cybersecurity Tools and Product Certifications
             </h4>
-            <!-- <div class="row py-4"> -->
-            <!-- <div class="py-lg-4"> -->
             <ul class="listing-certifications">
               <li>SIEM Administrator - LogRhythm</li>
               <li>SOC Analyst- LogRhythm</li>
@@ -598,249 +476,88 @@
               <li>Vulnerabilty Assesment - Tenable</li>
               <li>AWS Cloud Foundation - Amazon</li>
               <li>WAF Foundation - Barracuda</li>
-              <!-- <li>AWS Cloud Foundation - Amazon</li> -->
             </ul>
-
-            <!-- </div> -->
-            <!-- </div> -->
-          </div>
-        </div>
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- <div class="col-md-6">
-            <div class="py-lg-4">
-              <div class="card card-service wow fadeInUp">
-                <div class="caption">
-                  <h4 class="fg-theme">Certificate 2</h4>
-                  <div class="row py-4">
-                    <div class="py-lg-4"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-        <!-- <div class="col-md-6">
-            <div class="py-lg-4">
-              <div class="card card-service wow fadeInUp">
-                <div class="caption">
-                  <h4 class="fg-theme">Certificate 3</h4>
-                  <div class="row py-4">
-                    <div class="py-lg-4"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="py-lg-4">
-              <div class="card card-service wow fadeInUp">
-                <div class="caption">
-                  <h4 class="fg-theme">Certificate 4</h4>
-                  <div class="row py-4">
-                    <div class="py-lg-4"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  -->
-
-        <!-- <div class="row py-4">
-          
-        </div> -->
-        <!-- <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
-      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-        <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
-        <button class="btn btn-theme-outline" data-filter=".template">Template</button>
-        <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
-        <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
-        <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
-        <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
-      </div> -->
-
-        <!-- <div class="gridder my-3">
-        <div class="grid-item apps wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
-            <img src="../assets/img/work/work-1.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Mobile Travel App</h5>
-              <p>Travel, Discovery</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item template wireframes wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
-            <img src="../assets/img/work/work-2.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Music App</h5>
-              <p>Musics</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item apps ios wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
-            <img src="../assets/img/work/work-3.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Gaming Dashboard</h5>
-              <p>Games, Streaming</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item graphic ui-ux wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
-            <img src="../assets/img/work/work-4.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Drugs Delivery App</h5>
-              <p>Health, Drugs</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item apps ios wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
-            <img src="../assets/img/work/work-5.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Musics Discover</h5>
-              <p>Musics, Dashboard</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item graphic ui-ux wireframes wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
-            <img src="../assets/img/work/work-6.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Game Streaming</h5>
-              <p>Games, Streaming</p>
-            </div>
-          </div>
-        </div>
-      </div> End gridder -->
-        <!-- <div class="text-center wow fadeInUp">
-        <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
-      </div> -->
-      </div>
-    </div>
-    <!-- End Portfolio page -->
-
-    <!-- Testimonial -->
-    <!-- <div class="vg-page page-testimonial">
-    <div class="container">
-      <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
-      <div class="row justify-content-center mt-5 wow fadeInUp">
-        <div class="col-md-9">
-          <div class="owl-carousel testi-carousel">
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-place">
-                    <img src="../assets/img/testimonials/testimonials_1.jpg" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="caption">
-                    <div class="testi-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</div>
-                    <div class="testi-info">
-                      <div class="thumb-profile">
-                        <img src="../assets/img/testimonials/testimonials_1.jpg" alt="">
-                      </div>
-                      <div class="tagline">
-                        <h5 class="mb-0">Satria Nugraha</h5>
-                        <span class="text-muted">CEO Nutshell</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-place">
-                    <img src="../assets/img/testimonials/testimonials_2.jpg" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="caption">
-                    <div class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe natus expedita ab facilis ut, animi explicabo amet. Voluptatibus possimus iste enim, doloremque, fugiat accusamus nisi optio fugit ratione expedita harum?</div>
-                    <div class="testi-info">
-                      <div class="thumb-profile">
-                        <img src="../assets/img/testimonials/testimonials_2.jpg" alt="">
-                      </div>
-                      <div class="tagline">
-                        <h5 class="mb-0">Selena Arrini</h5>
-                        <span class="text-muted">CEO BigTree</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-  </div> End testimonial -->
-
-    <!-- Client -->
-    <!-- <div class="vg-page page-client">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_1.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_2.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_3.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_4.svg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_5.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_6.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_7.svg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3 item">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/logo/company_8.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> End client -->
 
     <!-- Blog -->
     <div class="vg-page page-blog dark" id="blog">
       <div class="container">
         <div class="text-center">
-          <div class="badge badge-subhead wow fadeInUp">Blog</div>
+          <div class="badge badge-subhead wow fadeInUp">Blog (Demo Blog - Coming Soon!)</div>
         </div>
+        <div class="row post-grid">
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="../assets/img/work/work-9.jpg" alt="">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Technology</a>
+                <a href="#" class="post-title">Invision design forward fund</a>
+                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="../assets/img/work/work-6.jpg" alt="">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Business</a>
+                <a href="#" class="post-title">Announcing a plan for small teams</a>
+                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="../assets/img/work/work-1.jpg" alt="">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Design</a>
+                <a href="#" class="post-title">5 basic tips for illustrating</a>
+                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
         <h1 class="text-center fw-normal wow fadeInUp">Latest Post</h1>
+      
 
         <div class="row post-grid">
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">
+                  <a
+                    href="https://twitter.com/BigyanKoirala56/status/1863161316560838700"
+                  ></a>
+                </p>
+              </blockquote>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">
+                  <a
+                    href="https://twitter.com/BigyanKoirala56/status/1820856941863948453"
+                  ></a>
+                </p>
+              </blockquote>
+            </div>
+          </div>
+
+
           <div class="col-md-6 col-lg-4 wow fadeInUp">
             <div class="card">
               <blockquote class="twitter-tweet">
@@ -849,232 +566,195 @@
                     href="https://twitter.com/BigyanKoirala56/status/1863588498554736685"
                   ></a>
                 </p>
-                <!-- &mdash; Bigyan Koirala (विज्ञान कोईराला)🇳🇵 (@BigyanKoirala56)
-                  Posted on Dec 2, 2033 -->
               </blockquote>
-              <!-- </div> -->
-              <!-- </div> -->
-
-              <!-- <div class="caption"> -->
-              <!-- <a href="javascript:void(0)" class="post-category"
-                  >Technology</a
-                >
-                <a href="#" class="post-title">Invision design forward fund</a>
-                <span class="post-date"
-                  ><span class="sr-only">Published on</span> May 22, 2018</span
-                > -->
-              <!-- </div> -->
             </div>
           </div>
           
-          
-          <!-- <div class="col-md-6 col-lg-4 wow fadeInUp"> -->
-            <!-- <div class="card" > -->
-              
-              <!-- <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flocus.ioe%2Fposts%2Fpfbid02JTrCUrmg69ESdziqeXGrWR5Zb2BPQwVALLbMUYuyDLNsPbqkeUNuSxRcyoGdLgAol&show_text=true&width=500" width="500" height="400px" style="border:none;overflow:auto" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
-              <!-- <blockquote class="twitter-tweet">
-                <p lang="en" dir="ltr">
-                  <a
-                    href="https://twitter.com/BigyanKoirala56/status/1863506521017237537"
-                  ></a>
-                </p> -->
-                <!-- &mdash; Bigyan Koirala (विज्ञान कोईराला)🇳🇵 (@BigyanKoirala56)
-              Posted on Dec 2, 2033 -->
-              <!-- </blockquote> -->
-              <!-- <div class="img-place">
-                <img src="../assets/img/work/work-6.jpg" alt="" />
-              </div> -->
-              <!-- <div class="caption">
-                <a href="javascript:void(0)" class="post-category">Business</a>
-                <a href="#" class="post-title"
-                  >Announcing a plan for small teams</a
-                >
-                <span class="post-date"
-                  ><span class="sr-only">Published on</span> May 22, 2018</span
-                >
-              </div> -->
-            <!-- </div> -->
-          <!-- </div> -->
-          <div class="col-md-6 col-lg-4 wow fadeInUp">
-            <div class="card" style="position: absolute; right: 30px;">
-              <!-- <a class="twitter-timeline" data-tweet-limit="20" href="https://twitter.com/@BigyanKoirala56?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3ABigyanKoirala56%7Ctwcon%5Es1">Tweets by @BigyanKoirala56</a> -->
-
-              <blockquote class="twitter-tweet">
-                <p lang="en" dir="ltr">
-                  <a
-                    href="https://twitter.com/BigyanKoirala56/status/1863161316560838700"
-                  ></a>
-                </p>
-                <!-- &mdash; Bigyan Koirala (विज्ञान कोईराला)🇳🇵 (@BigyanKoirala56)
-                  Posted on Dec 2, 2033 -->
-              </blockquote>
-              <!-- <div class="img-place">
-                <img src="../assets/img/work/work-1.jpg" alt="" />
-              </div> -->
-              <!-- <div class="caption"> -->
-              <!-- <a href="javascript:void(0)" class="post-category">Design</a>
-                <a href="#" class="post-title">5 basic tips for illustrating</a>
-                <span class="post-date"
-                  ><span class="sr-only">Published on</span> May 22, 2018</span
-                > -->
-              <!-- </div> -->
-            </div>
-          </div>
-          <!-- <iframe  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flocus.ioe%2Fposts%2Fpfbid02JTrCUrmg69ESdziqeXGrWR5Zb2BPQwVALLbMUYuyDLNsPbqkeUNuSxRcyoGdLgAol&show_text=true&width=500" width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
-
-
-          <!-- <div class="col-12 text-center py-3 wow fadeInUp">
-            <a href="blog-fullbar.html" class="btn btn-theme">See All Post</a>
-          </div> -->
         </div>
-
       </div>
     </div>
     <!-- End blog -->
 
-   <!-- Contact -->
-  <div class="vg-page page-contact dark" id="contact">
-    <div class="container-fluid dark">
-      <div class="text-center wow fadeInUp dark">
-        <div class="badge badge-subhead">Contact</div>
-      </div>
-      <h1 class="text-center fw-normal wow fadeInUp">Get in touch</h1>
-      <div class="row py-5">
-        <div class="col-lg-7 px-0 pr-lg-3 wow zoomIn">
-          <div class="vg-maps" >
-            <!-- <div id="google-maps" style="width: 100%; height: 100%;"></div> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1629.6655528922554!2d85.33053228300373!3d27.68901751041408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bc2db1be7d%3A0x80d591b8bbfb6b28!2sAlfa%20Beta%20Institute!5e0!3m2!1sen!2snp!4v1733414120230!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+    <!-- Contact -->
+    <div class="vg-page page-contact dark" id="contact">
+      <div class="container-fluid dark">
+        <div class="text-center wow fadeInUp dark">
+          <div class="badge badge-subhead">Contact</div>
         </div>
-        <div class="col-lg-5">
-          <form class="vg-contact-form">
-            <div class="form-row">
-              <div class="col-12 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Name" placeholder="Your Name">
-              </div>
-              <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Email" placeholder="Email Address">
-              </div>
-              <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Subject" placeholder="Subject">
-              </div>
-              <div class="col-12 mt-3 wow fadeInUp">
-                <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
-              </div>
-              <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
+        <h1 class="text-center fw-normal wow fadeInUp">Get in touch</h1>
+        <div class="row py-5">
+          <div class="col-lg-7 px-0 pr-lg-3 wow zoomIn">
+            <div class="vg-maps">
+              <!-- <div id="google-maps" style="width: 100%; height: 100%;"></div> -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9197535322805!2d85.32895017532304!3d27.688874976193173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bc2db1be7d%3A0x80d591b8bbfb6b28!2sAlfa%20Beta%20Institute!5e0!3m2!1sen!2snp!4v1733464331127!5m2!1sen!2snp"
+                width="500"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-          </form>
+          </div>
+
+          <div class="col-lg-5">
+            <form
+              class="vg-contact-form" 
+              action="https://formspree.io/f/mnnqrkko"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="col-12 mt-3 wow fadeInUp">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name" required
+                  />
+                </div>
+                <div class="col-6 mt-3 wow fadeInUp">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Email"
+                    placeholder="Email Address" required
+                  />
+                </div>
+                <div class="col-6 mt-3 wow fadeInUp">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Subject"
+                    placeholder="Subject" required
+                  />
+                </div>
+                <div class="col-12 mt-3 wow fadeInUp">
+                  <textarea
+                    class="form-control"
+                    name="Message"
+                    rows="1"
+                    placeholder="Enter message here.." required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-theme mt-3 wow fadeInUp ml-1"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+            <!-- Popup message container (hidden by default) -->
+           
+          </div>
         </div>
       </div>
     </div>
-  </div> <!-- End Contact -->
+
+    <!-- End Contact -->
 
     <!-- Footer -->
     <div class="vg-footer dark">
       <h1 class="text-center">Contact Me</h1>
       <div class="container">
         <div class="row">
-          <!-- col-lg-5 -->
           <div class="col-12 col-md-5 px-3 py-3 dark">
             <div class="footer-info">
-              <p style = "font-weight: bold;">Where to find me</p>
+              <p style="font-weight: bold">Where to find me</p>
               <hr class="divider" />
-              <p class="fs-large fg-white">
-                <span class="dark" style="text-decoration: underline; font-size: medium; ">Temporary Addr:  </span>
-                  <ul>
-                    <li style="font-size: medium;">New Baneshwor, Kathmandu,<br>Bagmati, Nepal, 44600</li>
-                    <li style="font-size: medium;">Birauta, Pokhara, Kaski,<br>Gandaki, Nepal, 33700 
-                    </li>
-                  </ul>
-                 
-                
-              </p>
-              <p class="fs-large fg-white dark">
-                <span class="dark" style="text-decoration: underline; font-size: medium;">Permanent Addr: </span>
-                  <ul>
-                    <li style="font-size: medium;">Waling, Syangja,
-                      <br>Gandaki, Nepal, 33200</li>
-                  </ul>
-                
-              </p>
+              <!-- <p class="fs-large fg-white"> -->
+              <span class="dark" style="text-decoration: underline"
+                >Temporary Address:
+              </span>
+              <ul>
+                <li>New Baneshwor, Kathmandu,<br />Bagmati, Nepal, 44600</li>
+                <li>Birauta, Pokhara, Kaski,<br />Gandaki, Nepal, 33700</li>
+              </ul>
+              <!-- </p> -->
+
+              <!-- <p class="fs-large fg-white dark"> -->
+              <span class="dark" style="text-decoration: underline"
+                >Permanent Address:
+              </span>
+              <ul>
+                <li>Waling, Syangja, <br />Gandaki, Nepal, 33200</li>
+              </ul>
+              <!-- </p> -->
             </div>
           </div>
-          <!-- col-md-6 -->
+
           <div class="col-12 col-md-4 col-lg-3 py-3">
             <div class="float-lg-right dark">
-              <p style = "font-weight: bold;">Let's Connect</p>
+              <p style="font-weight: bold">Let's Connect</p>
               <hr class="divider" />
               <ul class="list-unstyled">
-                <li>
-                  <a style="font-size: medium;"
+                <li class="ti-facebook">
+                  <a
                     class="dark"
                     href="https://www.facebook.com/bigyan.koirala2056"
                     target="_blank"
-                    ><span class="ti-facebook"></span><e>Facebook</e></span> </a
+                    >Facebook</a
                   >
                 </li>
-                <li></span>
-                  <a style="font-size: medium;"
+                <li class="ti-instagram">
+                  <a
                     class="dark"
                     href="https://www.instagram.com/bigyan.koirala2056"
                     target="_blank"
-                    ><span class="ti-instagram" ></span><e>Instagram</e></span> </a
+                    >Instagram</a
                   >
                 </li>
-                <li>
-                  <a style="font-size: medium;"
+                <li class="ti-twitter">
+                  <a
                     class="dark"
                     href="https://x.com/BigyanKoirala56"
                     target="_blank"
-                    ><span class="ti-twitter"></span><e>Twitter</e></span></a
+                    >Twitter</a
                   >
                 </li>
-                <li>
-                  <a style="font-size: medium;"
+                <li class="ti-linkedin">
+                  <a
                     class="dark"
                     href="https://www.linkedin.com/in/bigyankoirala99"
                     target="_blank"
-                    ><span class="ti-linkedin"></span><e>LinkedIn</e></span></a
+                    >LinkedIn</a
                   >
                 </li>
-                <!-- <li><a class = "dark" href="#">Discord</a></li> -->
-                <li>
-                  <a style="font-size: medium;"
+
+                <li class="ti-github">
+                  <a
                     class="dark"
                     href="https://github.com/bigyan-koirala"
                     target="_blank"
-                    ><span class="ti-github"></span><e>Github</e></span></a
+                    >Github</a
                   >
                 </li>
-               
               </ul>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-4 py-3">
             <div class="float-lg-right">
-              <p style = "font-weight: bold;">Reach me at</p>
+              <p style="font-weight: bold">Reach me at</p>
               <hr class="divider" />
               <ul class="list-unstyled">
-                <li class="dark" style="font-size: medium;">bigyan.koirala2056@gmail.com</li>
-                <li class="dark" style="font-size: medium;">+977 9863181093</li>
-                <!-- <li>+81302</li> -->
+                <li class="dark ti-email">
+                  <a href="mailto:bigyan.koirala2056@gmail.com" class="dark">
+                    bigyan.koirala2056@gmail.com
+                  </a>
+                </li>
+                <li class="dark ti-mobile">
+                  <a href="tel:+9779863181093" class="dark">
+                    +977 9863181093
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="row justify-content-center mt-3">
-          <!-- <div class="col-12 mb-3">
-          <h3 class="fw-normal text-center">Subscribe</h3>
-        </div> -->
-          <!-- <div class="col-lg-6">
-          <form class="mb-3">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Email address">
-              <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
-            </div>
-          </form>
-        </div> -->
           <div class="col-12">
-            <p class="text-center mb-0 mt-4" style="font-size: medium;">
+            <p class="text-center mb-0 mt-4">
               Copyright &copy; 2024. All Rights Reserved.
             </p>
           </div>
@@ -1111,14 +791,10 @@
 
     <script
       async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"
-    ></script>
-    <script
-      async
       src="https://platform.twitter.com/widgets.js"
       charset="utf-8"
     ></script>
+
     <script>
       document
         .getElementById("change-page")
@@ -1138,58 +814,76 @@
           this.value = "";
         });
     </script>
-    <!-- <script>
-      // Theme toggle function
-      function toggleTheme() {
-        const body = document.body;
-        const toggle = document.getElementById("theme-toggle");
-
-        // Toggle the dark-theme class on the body
-        if (toggle.checked) {
-          body.classList.add("dark-theme");
-        } else {
-          body.classList.remove("dark-theme");
-        }
-      }
-    </script> -->
 
     <script>
-      // Track current theme state
-      let isDarkTheme = false;
+      // Function to apply the theme
+      const applyTheme = (themeClass, isDark) => {
+        // Remove all theme-related classes except dark-theme
+        document.body.className = document.body.className.replace(
+          /\btheme-\w+\b/g,
+          ""
+        );
 
-      // Toggle between light and dark themes
-      function toggleTheme() {
-        const body = document.body;
-        const toggle = document.getElementById("theme-toggle");
-
-        isDarkTheme = toggle.checked; // Update theme state
-        if (isDarkTheme) {
-          body.classList.add("dark-theme");
-          body.classList.add("fg-theme");
-        } else {
-          body.classList.remove("dark-theme");
+        // Add the selected theme class
+        if (themeClass) {
+          document.body.classList.add(themeClass);
         }
-      }
 
-      // Change accent color dynamically
-      function changeColor(element, color) {
-        // Update CSS variable for accent color
-        document.documentElement.style.setProperty("--accent-color", color);
-
-        // Remove 'selected' class from all color items
-        const colorItems = document.querySelectorAll(".color-item");
-        colorItems.forEach((item) => item.classList.remove("selected"));
-
-        // Add 'selected' class to the clicked color
-        element.classList.add("selected");
-
-        // Ensure the dark theme class remains intact if active
-        if (isDarkTheme) {
+        // Handle dark theme
+        if (isDark) {
           document.body.classList.add("dark-theme");
+          document.getElementById("theme-toggle").checked = true;
+        } else {
+          document.body.classList.remove("dark-theme");
+          document.getElementById("theme-toggle").checked = false;
         }
-      }
+      };
+
+      // On page load, apply saved theme
+      window.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("theme-class");
+        const isDark = localStorage.getItem("dark-theme") === "true";
+
+        applyTheme(savedTheme, isDark);
+      });
+
+      // Event listeners for color items
+      document.querySelectorAll(".color-item").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          // Remove 'selected' class from all items
+          document
+            .querySelectorAll(".color-item")
+            .forEach((el) => el.classList.remove("selected"));
+
+          // Add 'selected' class to the clicked item
+          event.target.classList.add("selected");
+
+          // Get the color class from the clicked item
+          const colorClass = event.target.getAttribute("data-class");
+
+          // Save the selected theme to localStorage
+          localStorage.setItem("theme-class", colorClass);
+
+          // Apply the theme
+          applyTheme(
+            colorClass,
+            document.getElementById("theme-toggle").checked
+          );
+        });
+      });
+
+      // Event listener for theme toggle
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        const isDark = document.getElementById("theme-toggle").checked;
+
+        // Save the dark theme state to localStorage
+        localStorage.setItem("dark-theme", isDark);
+
+        // Apply the dark theme
+        applyTheme(localStorage.getItem("theme-class"), isDark);
+      });
     </script>
-    
-    </script>
+
+
   </body>
 </html>

@@ -164,26 +164,26 @@ $(document).ready(function () {
 });
 
 $(document).ready(function() {
-  $('#sideel').click(function() {
-    $(this).parents('.config').toggleClass('active');
-  });
+  // $('#sideel').click(function() {
+  //   $(this).parents('.config').toggleClass('active');
+  // });
   
-  $('body').data('bodyClassList', '');
+  // $('body').data('bodyClassList', '');
   
-  $('.color-item').click(function() {
-    var cls = $(this).data('class');
+  // $('.color-item').click(function() {
+  //   var cls = $(this).data('class');
     
-    $('body').attr('class', $('body').data('bodyClassList'));
-    $('body').addClass(cls);
-  });
+  //   $('body').attr('class', $('body').data('bodyClassList'));
+  //   $('body').addClass(cls);
+  // });
   
-  $('#change-page').on('change', function() {
-    var url = $(this).val() + '.html';
+  // $('#change-page').on('change', function() {
+  //   var url = $(this).val() + '.html';
     
-    if($(this).val()) {
-      window.location.assign(url);
-    }
-  });
+  //   if($(this).val()) {
+  //     window.location.assign(url);
+  //   }
+  // });
   
   $('[data-animate="scrolling"]').each(function() {
     var self = $(this);

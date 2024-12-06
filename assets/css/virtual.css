@@ -400,7 +400,7 @@ a:hover, a:active {
     
     margin: 0 !important;
     padding: 10px 15px;
-    background-color: #fff;
+    background-color: var(--set-menu);
     box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.2);
 }
 

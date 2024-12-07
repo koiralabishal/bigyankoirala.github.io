@@ -1,102 +1,4 @@
-/*
- 
- [Master Stylesheet]
 
- Project:   VirtualGram Template
- Version:   1.0
- Author:    Mikhail Abdillah
- Website:   https://www.macode.web.id/
-
- [Table of contents]
-
- 1. Basic
- 2. Button
- 3. Color Scheme
- 4. Progress bar
- 5. Theme list
- 6. Timeline
- 7. Navigation
- 8. Sidebar
- 9. Page Style
- 10. Social
- 11. Theme Color
- 12. Reveal
- 13. Page Switching
- 14. Carousel
- 15. Grid (OpenGraph)
-
- */
-
-/* :root {
-    --theme-red: #ef3724;
-    --theme-blue: #2960f7;
-    --theme-green: #8cc63f;
-    --theme-orange: #fd7e14;
-    --theme-purple: #6f42c1;
-    
-} */
-
-  /* Define dark theme variables */
-  
-
-/* 
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #121212;
-    --navbar-bg-color: rgba(104, 102, 102, 0.8);
-    --navbar-text-color: #fff;
-
-  } 
-
-
-    .dark-theme { 
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --navbar-bg-color: #121212;
-    --navbar-text-color: #ffffff;
-  }  
-
-.dark {
-  background-color: var(--bg-color) !important ;
-  color: var(--text-color) !important;
-
-} 
-  
-  Checkbox styles
-      .theme-toggle-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-  
-      .theme-toggle {
-        appearance: none;
-        width: 50px;
-        height: 25px;
-        background-color: var(--text-color);
-        border-radius: 25px;
-        position: relative;
-        outline: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-  
-      .theme-toggle::before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: var(--bg-color);
-        top: 2.5px;
-        left: 5px;
-        transition: transform 0.3s;
-      }
-  
-      .theme-toggle:checked::before {
-        transform: translateX(25px);
-      } */
-/* Light */
 @font-face {
     font-family: 'Quicksand';
     font-style: normal;
@@ -220,10 +122,6 @@ a:hover, a:active {
     box-shadow: none !important;
 }
 
-/* #google_translate_element {
-    display: none;
-} */
-
 .btn-theme-outline {
     padding: 10px 30px;
     margin: 5px;
@@ -330,10 +228,8 @@ a:hover, a:active {
 .config {
     position: fixed;
     top: 50%;
-    /* right: -282px; */
     right: 0px;
     padding: 5px;
-    
     background-color: transparent;
     transition: right .3s ease;
     z-index: 100;
@@ -718,32 +614,6 @@ a:hover, a:active {
        max-width:100%
     }
   }
-/* social -icons  */
-/* .social-icons .social-item{
-    position: relative;
-    top:100 px;
-    list-style-type: none;
-    padding-left: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    max-width: 180px;
-  }
-  
-   .social-link {
-    font-size: 22px;
-  }
-  
-  .social-link:hover {
-    cursor: pointer;
-    color: #F85C70;
-  }
-   */
 
 
 

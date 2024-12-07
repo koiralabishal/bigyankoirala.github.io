@@ -22,8 +22,8 @@
 
 
 .dark-theme {
-  --bg-color: #121212; /* Background for dark theme */
-  --text-color: #ffffff; /* Text for dark theme */
+  --bg-color: #121212; 
+  --text-color: #ffffff;
   --footer-bg: #000000; /* Footer background in dark theme */
   --footer-text: #ffffff; /* Footer text in dark theme */
   --navbar-bg: #000000;
@@ -39,6 +39,7 @@
   --set-menu: #000000;
  
 }
+
 
 
 body,
@@ -88,7 +89,6 @@ html {
   top: 70px;
   left: 30px;
   list-style-type: none;
-  /* text-decoration: underline; */
   padding-left: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -185,31 +185,26 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(62, 57, 57, 0.8);
-  /* background-color: var(); */
   z-index: -1;
 }
 
 .page-home .navbar {
-  /* --bg-color: rgba(104, 102, 102, 0.8); */
   position: absolute;
   top: auto;
   left: 0;
   width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
-  /* background-color: rgba(104, 102, 102, 0.8); */
   background-color: var(--navbar-bg);
   z-index: 99;
 }
 
 .page-home .navbar.floating {
   top: 0;
-  /* background-color: #343a40; */
   background-color: var(--nav-bg-float);
 }
 
 .page-home .caption-header {
-  /* position: absolute; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -252,7 +247,6 @@ html {
 }
 
 .page-about {
-  /* background-color: #fff; */
   background-color: var(--about-bg);
   color: var(--about-text);
 }
@@ -260,7 +254,6 @@ html {
 .page-about .img-place {
   width: 280px;
   height: 350px;
-  /* background-color: #dfe0e6; */
   background-color: var(--about-img-place-bg);
   overflow: unset;
 }
@@ -272,7 +265,6 @@ html {
   right: -35px;
   width: 100%;
   height: 100%;
-  /* border: 5px solid #747474; */
   border: 5px solid var(--about-img-before); 
   z-index: -1;
 }
@@ -320,7 +312,6 @@ html {
 .title1 {
   width: 150px;
   padding: 6px 20px;
-  /* background-color: #747474; */
   background-color: var(--timeline-title);
   color: #fff;
   font-weight: 500;
@@ -357,38 +348,21 @@ html {
 
 .card-service {
   margin: 16px auto;
-
-  /* 22 */
   padding: 50px;
-  /* #fff */
-  /* background-color: #f8e9e9; */
   background-color: #3a3535;
-
-  /* 0 */
   border: 2;
   border-radius: 8%;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
-  /* box-sizing: border-box; */
-  /* overflow: hidden; */
 }
 
 .card-service-certification {
   margin: 50px auto;
   position: relative;
-  /* margin-left: 50px; */
-  /* 22 */
   padding: 50px;
-  /* padding-right: 90px; */
-  /* #fff */
-  /* background-color: #f8e9e9; */
   background-color: #3a3535;
-  /* -moz-box-align: center; */
-  /* 0 */
   border: 2;
   border-radius: 50px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
-  /* box-sizing: border-box; */
-  /* overflow: hidden; */
 }
 
 .card-service-certification:hover {
@@ -401,10 +375,8 @@ html {
   display: grid; /* Enables grid layout */
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 10px; /* Space between rows and columns */
-  /* list-style: none;  */
   font-size: 15px; /* Adjust font size */
   padding: 1; /* Removes padding */
-  /* margin: 20px;  */
   text-align: left; /* Align text to the left */
 }
 
@@ -412,7 +384,6 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  /* line-height: 1.5rem ; */
   font-size: 15px;
   padding: 1px;
   margin-left: 17%;
@@ -423,36 +394,25 @@ html {
 
 
 .twitter-tweet {
-  /* background-color: #555 !important; */
   color: white !important;
-  /* border-radius: 70px !important;  */
-  /* border: 1 solid red !important; */
   padding: 10px !important;
 
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
 }
 
 .twitter-tweet iframe {
   border-radius: 30px !important;
   width: 100% !important;
   height: 365px !important;
-  /* background-color: black !important;; */
 }
 
 
 .card-service1 {
   margin: 16px auto;
-
-  /* 22 */
   padding: 22px;
-  /* #fff */
   background-color: #f8e9e9;
-  /* 0 */
   border: 2;
   border-radius: 4%;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
-  /* box-sizing: border-box; */
-  /* overflow: hidden; */
 }
 
 .card-service:hover {
@@ -460,8 +420,6 @@ html {
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 1;
-  /* margin-left: 100px 0 auto; */
-  /* padding: 50px; */
 }
 
 .card-service1:hover {
@@ -469,8 +427,6 @@ html {
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 1;
-  /* margin-left: 100px 0 auto; */
-  /* padding: 50px; */
 }
 
 .card-service .icon,
@@ -483,7 +439,6 @@ html {
   text-align: center;
   font-size: 32px;
   border-radius: 50%;
-  /* #f4f5f8 */
   background-color: var(--icon-color);
 }
 
@@ -492,7 +447,6 @@ html {
 .card-service-certification .caption {
   margin-top: 16px;
   text-align: center;
-  /* color: #747474; */
   color: #fff;
 }
 
@@ -684,12 +638,8 @@ html {
   position: relative; /* Create a positioning context */
   right: 25px;
   margin-left: 60px;
-  /* height: 200px; */
-  /* background-color: #2960f7; */
-  padding-bottom: 56.25%;
-  /* 16:9 aspect ratio (height is 56.25% of width) */
-  height: 0;
-  /* Set initial height to 0 for responsive scaling */
+  padding-bottom: 56.25%;  /* 16:9 aspect ratio (height is 56.25% of width) */
+  height: 0;    /* Set initial height to 0 for responsive scaling */
   overflow: hidden; /* Ensure content outside the bounds is hidden */
   border-radius: 20px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
@@ -699,7 +649,6 @@ html {
   position: absolute; /* Position iframe within the parent */
   top: 0;
   left: 0px;
-  /* right: 3px; */
   width: 100%;
   height: 100%;
   border: 0; /* Remove iframe border */
@@ -707,25 +656,57 @@ html {
 }
 
 .vg-contact-form {
-  /* position: relative; */
-  /* top: 3%; */
-  /* right: 30px; */
   margin: 0 auto;
   padding: 30px 0;
   
 
 }
 
-/* @media(max-width: 1240px) {
-  .vg-contact-form  input  {
-  
-    margin: 0 auto;
-    padding: 5px 0;
-    
-    
-    
+
+
+.vg-footer .ms-2 {
+  margin-left: 0.8rem; /* Adds spacing between the icon and text */
+}
+
+
+
+@media (max-width: 1200px) {
+  .card-service h4 {
+    font-size: 1.1rem; /* Smaller font size for headings */
   }
-} */
+
+  .card-service ul li {
+    font-size: 0.75rem; /* Smaller font size for list items */
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-service {
+    padding: 15px;
+  }
+
+  .card-service ul li {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+
+@media (max-width: 992px) {
+  .card-service-certification {
+    padding: 10px;
+  }
+
+  .card-service-certification h4 {
+    font-size: 0.9rem;
+  }
+
+  .listing-certifications li {
+    font-size: 0.65rem;
+  }
+}
+
 
 /* Footer */
 .vg-footer {
@@ -746,7 +727,8 @@ html {
 .vg-footer .list-unstyled a,
 .vg-footer .list-unstyled li,
 .footer-info li,
-.footer-info span{
+.footer-info span,
+#Copyright{
   margin-bottom: 6px;
   font-size: 21px;
   color: #fff;
